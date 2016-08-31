@@ -135,86 +135,85 @@ var (
 			labels: []string{"cluster", "node"},
 		},
 		"indices_indexing_delete_total": &VecInfo{
-			help: "Total indexing deletes",
+			help:   "Total indexing deletes",
 			labels: []string{"cluster", "node"},
 		},
 		"indices_indexing_delete_time_ms_total": &VecInfo{
-			help: "Total time indexing delete in milliseconds",
+			help:   "Total time indexing delete in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_time_ms":           &VecInfo{
-			help: "Total get time in milliseconds",
+		"indices_get_time_ms": &VecInfo{
+			help:   "Total get time in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_total":          &VecInfo{
-			help:"Total get",
+		"indices_get_total": &VecInfo{
+			help:   "Total get",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_missing_time_ms":        &VecInfo{
-			help:"Total time of get missing in milliseconds",
+		"indices_get_missing_time_ms": &VecInfo{
+			help:   "Total time of get missing in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_missing_total":             &VecInfo{
-			help:"Total get missing",
+		"indices_get_missing_total": &VecInfo{
+			help:   "Total get missing",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_exists_time_ms":            &VecInfo{
-			help:"Total time get exists in milliseconds",
+		"indices_get_exists_time_ms": &VecInfo{
+			help:   "Total time get exists in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_get_exists_total":           &VecInfo{
-			help:"Total get exists operations",
+		"indices_get_exists_total": &VecInfo{
+			help:   "Total get exists operations",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_search_query_time_ms":          &VecInfo{
-			help: "Total search query time in milliseconds",
+		"indices_search_query_time_ms": &VecInfo{
+			help:   "Total search query time in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_search_query_total":            &VecInfo{
-			help: "Total search queries",
+		"indices_search_query_total": &VecInfo{
+			help:   "Total search queries",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_search_fetch_time_ms":          &VecInfo{
-			help: "Total search fetch time in milliseconds",
+		"indices_search_fetch_time_ms": &VecInfo{
+			help:   "Total search fetch time in milliseconds",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_search_fetch_total":            &VecInfo{
-			help: "Total search fetches",
+		"indices_search_fetch_total": &VecInfo{
+			help:   "Total search fetches",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_translog_operations":           &VecInfo{
-			help: "Total translog operations",
+		"indices_translog_operations": &VecInfo{
+			help:   "Total translog operations",
 			labels: []string{"cluster", "node"},
 		},
-		"indices_translog_size_in_bytes":        &VecInfo{
-			help: "Total translog size in bytes",
+		"indices_translog_size_in_bytes": &VecInfo{
+			help:   "Total translog size in bytes",
 			labels: []string{"cluster", "node"},
 		},
-		"jvm_gc_collection_seconds_count": 	 &VecInfo{
+		"jvm_gc_collection_seconds_count": &VecInfo{
 			help:   "Count of JVM GC runs",
 			labels: []string{"cluster", "node", "gc"},
 		},
-		"jvm_gc_collection_seconds_sum": 	 &VecInfo{
+		"jvm_gc_collection_seconds_sum": &VecInfo{
 			help:   "GC run time in seconds",
 			labels: []string{"cluster", "node", "gc"},
 		},
-		"process_cpu_time_seconds_sum": 	 &VecInfo{
+		"process_cpu_time_seconds_sum": &VecInfo{
 			help:   "Process CPU time in seconds",
 			labels: []string{"cluster", "node", "type"},
 		},
-		"thread_pool_completed_count": 	 	 &VecInfo{
+		"thread_pool_completed_count": &VecInfo{
 			help:   "Thread Pool operations completed",
 			labels: []string{"cluster", "node", "type"},
 		},
-		"thread_pool_rejected_count": 		 &VecInfo{
+		"thread_pool_rejected_count": &VecInfo{
 			help:   "Thread Pool operations rejected",
 			labels: []string{"cluster", "node", "type"},
 		},
-		"http_open_total":                       &VecInfo{
-			help:    "Total HTTP connections opened",
+		"http_open_total": &VecInfo{
+			help:   "Total HTTP connections opened",
 			labels: []string{"cluster", "node"},
 		},
-
 	}
 
 	gaugeMetrics = map[string]*VecInfo{
@@ -306,7 +305,7 @@ var (
 			help:   "Max file descriptors for process",
 			labels: []string{"cluster", "node"},
 		},
-		"os_mem_used_percent":	   &VecInfo{
+		"os_mem_used_percent": &VecInfo{
 			help:   "Percentage of used memory",
 			labels: []string{"cluster", "node"},
 		},
@@ -382,8 +381,8 @@ var (
 			help:   "Number of unassigned shards",
 			labels: []string{"cluster", "index"},
 		},
-		"http_open":                       &VecInfo{
-			help:    "Current HTTP connections opened",
+		"http_open": &VecInfo{
+			help:   "Current HTTP connections opened",
 			labels: []string{"cluster", "node"},
 		},
 	}
